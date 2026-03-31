@@ -1289,11 +1289,11 @@ function CarsPage({ onClose }: { onClose: () => void }) {
                     <a
                       href="/#"
                       data-ocid={`cars.quicklinks.item.${i + 1}`}
-                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-gold transition-colors duration-200 group py-1"
+                      className="flex items-center gap-2 text-sm text-[#1F1F1F] hover:text-[#004B73] transition-colors duration-200 group py-1"
                     >
                       <ChevronRight
                         size={12}
-                        className="text-border group-hover:text-gold shrink-0 transition-colors duration-200"
+                        className="text-[#004B73]/50 group-hover:text-[#004B73] shrink-0 transition-colors duration-200"
                       />
                       {item}
                     </a>
@@ -1318,7 +1318,7 @@ function CarsPage({ onClose }: { onClose: () => void }) {
                   Real-Time Road Info
                 </h3>
               </div>
-              <p className="text-xs text-muted-foreground leading-relaxed mb-3">
+              <p className="text-xs text-[#444444] leading-relaxed mb-3">
                 Dial 511 or visit 511mn.org for live traffic conditions, road
                 closures, and travel times across Minnesota.
               </p>
@@ -1358,7 +1358,7 @@ function CarsPage({ onClose }: { onClose: () => void }) {
               <div className="mt-3 pt-3 border-t border-border/40">
                 <a
                   href="mailto:DVS.motor.vehicles@state.mn.us"
-                  className="text-xs text-muted-foreground hover:text-gold transition-colors duration-200 break-all"
+                  className="text-xs text-[#444444] hover:text-gold transition-colors duration-200 break-all"
                 >
                   DVS.motor.vehicles@state.mn.us
                 </a>
@@ -1760,7 +1760,7 @@ function RailPage({ onClose }: { onClose: () => void }) {
                       key={item.label}
                       href={item.href}
                       data-ocid={`rail.sidebar${gi + 1}.link`}
-                      className="flex items-start gap-1.5 text-xs text-[#004B73]/80 hover:text-[#004B73] transition-colors duration-200 py-0.5 leading-snug"
+                      className="flex items-start gap-1.5 text-xs text-[#1F1F1F] hover:text-[#004B73] transition-colors duration-200 py-0.5 leading-snug"
                     >
                       <ChevronRight
                         size={11}
@@ -1773,10 +1773,10 @@ function RailPage({ onClose }: { onClose: () => void }) {
                     <div
                       key={subgroup.subtitle}
                       className={
-                        sgi > 0 ? "pt-2 mt-2 border-t border-white/8" : ""
+                        sgi > 0 ? "pt-2 mt-2 border-t border-[#D6D6D6]" : ""
                       }
                     >
-                      <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-1.5 font-display">
+                      <p className="text-[10px] font-bold uppercase tracking-wider text-[#444444] mb-1.5 font-display">
                         {subgroup.subtitle}
                       </p>
                       {subgroup.items.map((item) => (
@@ -1784,11 +1784,11 @@ function RailPage({ onClose }: { onClose: () => void }) {
                           key={item.label}
                           href={item.href}
                           data-ocid={`rail.sidebar${gi + 1}.link`}
-                          className="flex items-start gap-1.5 text-xs text-[#004B73]/75 hover:text-[#004B73] transition-colors duration-200 py-0.5 leading-snug"
+                          className="flex items-start gap-1.5 text-xs text-[#1F1F1F] hover:text-[#004B73] transition-colors duration-200 py-0.5 leading-snug"
                         >
                           <ChevronRight
                             size={11}
-                            className="shrink-0 mt-0.5 text-[#004B73]/40"
+                            className="shrink-0 mt-0.5 text-[#004B73]/60"
                           />
                           {item.label}
                         </a>
